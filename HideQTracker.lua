@@ -82,6 +82,7 @@ function UpdateObjectiveTrackerVisibility()
     local watchedQuestsAreVisible = QuestObjectiveTracker.ContentsFrame:IsShown()
     local watchedWorldQuestsAreVisible = WorldQuestObjectiveTracker.ContentsFrame:IsShown()
     local watchedProfessionsAreVisible = ProfessionsRecipeTracker.ContentsFrame:IsShown()
+    local watchedCampainsAreVisible = CampaignQuestObjectiveTracker.ContentsFrame:IsShown()
     local inInstance, instanceType = IsInInstance()
     local isOutdoor = IsOutdoors()
 
@@ -89,35 +90,41 @@ function UpdateObjectiveTrackerVisibility()
         if watchedQuestsAreVisible then QuestObjectiveTracker.Header.MinimizeButton:Click() end
         if watchedWorldQuestsAreVisible then WorldQuestObjectiveTracker.Header.MinimizeButton:Click() end
         if watchedProfessionsAreVisible then ProfessionsRecipeTracker.Header.MinimizeButton:Click() end
+        if watchedCampainsAreVisible then CampaignQuestObjectiveTracker.Header.MinimizeButton:Click() end
     end
 
     if inInstance and instanceType == "party" and HideQTrackerSettings.inParty then
         if watchedQuestsAreVisible then QuestObjectiveTracker.Header.MinimizeButton:Click() end
         if watchedWorldQuestsAreVisible then WorldQuestObjectiveTracker.Header.MinimizeButton:Click() end
         if watchedProfessionsAreVisible then ProfessionsRecipeTracker.Header.MinimizeButton:Click() end
+        if watchedCampainsAreVisible then CampaignQuestObjectiveTracker.Header.MinimizeButton:Click() end
     end
 
     if inInstance and instanceType == "arena" and HideQTrackerSettings.inArena then
         if watchedQuestsAreVisible then QuestObjectiveTracker.Header.MinimizeButton:Click() end
         if watchedWorldQuestsAreVisible then WorldQuestObjectiveTracker.Header.MinimizeButton:Click() end
         if watchedProfessionsAreVisible then ProfessionsRecipeTracker.Header.MinimizeButton:Click() end
+        if watchedCampainsAreVisible then CampaignQuestObjectiveTracker.Header.MinimizeButton:Click() end
     end
 
     if inInstance and instanceType == "scenario" and HideQTrackerSettings.inScenario then
         if watchedQuestsAreVisible then QuestObjectiveTracker.Header.MinimizeButton:Click() end
         if watchedWorldQuestsAreVisible then WorldQuestObjectiveTracker.Header.MinimizeButton:Click() end
         if watchedProfessionsAreVisible then ProfessionsRecipeTracker.Header.MinimizeButton:Click() end
+        if watchedCampainsAreVisible then CampaignQuestObjectiveTracker.Header.MinimizeButton:Click() end
     end
 
     if inInstance and instanceType == "pvp" and HideQTrackerSettings.inBattleground then
         if watchedQuestsAreVisible then QuestObjectiveTracker.Header.MinimizeButton:Click() end
         if watchedWorldQuestsAreVisible then WorldQuestObjectiveTracker.Header.MinimizeButton:Click() end
         if watchedProfessionsAreVisible then ProfessionsRecipeTracker.Header.MinimizeButton:Click() end
+        if watchedCampainsAreVisible then CampaignQuestObjectiveTracker.Header.MinimizeButton:Click() end
     end
 
     if isOutdoor and HideQTrackerSettings.isOutdoor then
         if watchedQuestsAreVisible then QuestObjectiveTracker.Header.MinimizeButton:Click() end
         if watchedWorldQuestsAreVisible then WorldQuestObjectiveTracker.Header.MinimizeButton:Click() end
         if watchedProfessionsAreVisible then ProfessionsRecipeTracker.Header.MinimizeButton:Click() end
+        if watchedCampainsAreVisible then CampaignQuestObjectiveTracker.Header.MinimizeButton:Click() end
     end
 end

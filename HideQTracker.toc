@@ -2,7 +2,7 @@
 ## Title: HideQTracker
 ## Notes: Addon to hide quest tracker in dungeons and battlegrounds
 ## Author: Miniver
-## Version: 1.0
+## Version: 1.1
 ## Dependencies:
 ## SavedVariables: HideQTrackerSettings
 
