@@ -1,0 +1,9 @@
+## Interface: 110005
+## Title: HideQTracker
+## Notes: Addon to hide quest tracker in dungeons and battlegrounds
+## Author: Miniver
+## Version: 1.0
+## Dependencies:
+## SavedVariables: HideQTrackerSettings
+
+HideQTracker.lua
